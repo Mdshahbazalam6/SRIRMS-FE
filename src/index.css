@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+body {
+  background: #f5f7fb;
+  font-family: sans-serif;
+}
+
+.wave {
+  animation: wave 1s linear infinite;
+  animation-delay: calc(1s - var(--i));
+}
+
+@keyframes wave {
+  0% {
+    scale: 0;
+  }
+  50% {
+    scale: 1;
+  }
+  100% {
+    scale: 0;
+  }
+}
